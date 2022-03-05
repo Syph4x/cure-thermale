@@ -33,7 +33,7 @@ FROM ADRESSE
 ORDER by idadresse Desc 
 limit 4 ;
 
-3-lister les personne et les caracteristique de leurs maladie 
+-- 3-lister les personne et les caracteristique de leurs maladie 
 
 select personne.numidentite,personne.nom_personne,personne.prenom, maladie.nom_maladie,maladie.gravité
 FROM personne 
