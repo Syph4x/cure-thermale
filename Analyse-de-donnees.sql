@@ -43,7 +43,7 @@ INNER JOIN maladie
 on maladie.idmaladie = assPM.idmaladie
 ;
 
-4-lister les personnes  ayant que des  maladie  « Osseuse » :
+-- 4-lister les personnes  ayant que des  maladie  « Osseuse » :
 
 select personne.numidentite,personne.nom_personne,personne.prenom, maladie.nom_maladie,maladie.gravité , maladie.type_maladie
 FROM personne 
@@ -52,12 +52,13 @@ ON personne.numidentite = assPM.numidentite
 INNER JOIN maladie 
 on maladie.idmaladie = assPM.idmaladie
 WHERE type_maladie LIKE 'Osseuse';
-5- donner le prix moyen des prestation : 
+
+-- 5- donner le prix moyen des prestation : 
 
 select AVG(prix) as prix_moyen_des_prestation 
 FROM prestation ;
 
-6- lister les personnes n’ayant pas valider leurs vacances : 
+-- 6- lister les personnes n’ayant pas valider leurs vacances : 
 
 select personne.nom_personne , personne.prenom, validation
 FROM personne 
