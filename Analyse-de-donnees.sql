@@ -1,4 +1,4 @@
-Ajouter une colonne  nom :
+-- Ajouter une colonne  nom :
 alter table prestation
 ADD COLUMN nom VARCHAR (20)  ;
 
