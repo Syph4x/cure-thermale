@@ -26,7 +26,7 @@ III- requete
 SELECT*
 FROM prestation; 
 
-2- Lister les caracteristiques des  4 dernieres  adresse: 
+-- 2- Lister les caracteristiques des  4 dernieres  adresse: 
 
 select*
 FROM ADRESSE 
