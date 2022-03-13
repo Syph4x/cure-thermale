@@ -3,7 +3,7 @@ ALTER TABLE prestation
 ADD COLUMN nom VARCHAR (20);
 
 
--- inserer les  données:
+-- Inserer les  données:
 
 INSERT INTO prestation (idprestation, nom, prix, duree)
 VALUES
