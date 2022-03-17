@@ -52,8 +52,8 @@ datefin DATE
 	
 
 CREATE TABLE Adresse(
-idadresse INT NOT NULL PRIMARY KEY ,
-num_rue INT ,
+idadresse INT NOT NULL PRIMARY KEY,
+num_rue INT,
 nom_rue VARCHAR(40),
 idquartier INT NOT NULL,
 FOREIGN KEY fk_quartier(idquartier) REFERENCES Quartier(idquartier)
@@ -82,8 +82,7 @@ VALUES
 (3,"Jet d'eau",78,20),
 (4,"Massage relax",89,25),
 (5,"Argile",100,30),
-(6,"Luminothérapie",110,35)
-;
+(6,"Luminothérapie",110,35);
 
 /*
  REQUÊTE :
@@ -110,8 +109,7 @@ FROM personne
 INNER JOIN personne_maladie AS PM
 ON personne.numidentite = PM.numidentite
 INNER JOIN maladie 
-ON maladie.idmaladie = PM.idmaladie
-;
+ON maladie.idmaladie = PM.idmaladie;
 
 -- 4-lister les personnes  ayant que des  maladie  « Osseuse » :
 
