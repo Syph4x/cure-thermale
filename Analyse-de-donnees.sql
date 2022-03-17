@@ -135,7 +135,9 @@ FROM prestation;
 
 -- 6- lister les personnes n'ayant pas valider leurs vacances : 
 
-SELECT personne.nom_personne, personne.prenom, validation
+SELECT personne.nom_personne, 
+       personne.prenom,
+       validation
 FROM personne 
 inner JOIN personne_conges AS PC 
 ON 
