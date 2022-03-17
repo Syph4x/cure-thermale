@@ -18,16 +18,16 @@ date_fin DATE
 CREATE TABLE Prestation(
 idprestation INT NOT NULL PRIMARY KEY,
 duree INT,
-prix FLOAT,
+prix DECIMAL,
 nom VARCHAR(20)
 );
 
 CREATE TABLE maladie(
 idmaladie INT NOT NULL PRIMARY KEY,
-type_maladie VARCHARA(20),
+type_maladie VARCHAR(20),
 nom_maladie VARCHAR(20),
 traitement VARCHAR(20),
-gravitÃ© VARCHAR(20)
+gravite VARCHAR(20)
 );
 
 CREATE TABLE Personne_maladie (
