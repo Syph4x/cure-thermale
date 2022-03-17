@@ -27,7 +27,7 @@ idmaladie INT NOT NULL PRIMARY KEY,
 type_maladie VARCHAR(20),
 nom_maladie VARCHAR(20),
 traitement VARCHAR(20),
-gravite VARCHAR(20)
+gravité VARCHAR(20)
 );
 
 CREATE TABLE Personne_maladie (
